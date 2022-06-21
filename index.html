@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div class="wraper">
+<form novalidate>
+
+    <div class="form-input-windows">
+  <div class="form-control">
+    <label for="student-name">Name:</label>
+    <br>
+    <input type="text" name="name" id="student-name" placeholder="Enter your name" class="required">
+  </div>
+  
+  <div>
+    <label for="student-surname">Surname:</label>
+    <br>
+    <input type="text" name="surname" id="student-surname" placeholder="Enter your surname" class="required">
+  </div>
+
+  <div>
+    <label for="student-age">Age:</label>
+    <br>
+    <input type="number" name="age" id="student-age" placeholder="Enter your age" class="required">
+  </div>
+
+  <div>
+    <label for="student-phone">Phone:</label>
+    <br>
+    <input type="tel" name="phone" id="student-phone" placeholder="Enter your phone" class="required">
+  </div>
+
+  <div>
+    <label for="student-email">Email:</label>
+    <br>
+    <input type="email" name="email" id="student-email" placeholder="Enter your email" class="required">
+  </div>
+</div>
+  <div>
+    <div class="IT-window">
+    <label for="student-it-knowledge">IT Knowledge:</label>
+    <br>
+    <input type="range" name="it-knowledge" id="student-it-knowledge" min="1" max="10" value="5" step="1">
+    <output id="it-knowledge-output">5</output>
+  </div>
+</div>
+
+  <fieldset>
+    <legend>Group:</legend>
+
+    <input type="radio" name="group" id="student-group-1" value="type 1" checked>
+    <label for="student-group-1">TYPE 1 gr.</label>
+    
+    <input type="radio" name="group" id="student-group-2" value="type 2">
+    <label for="student-group-2">TYPE 2 gr.</label>
+    
+    <input type="radio" name="group" id="student-group-3" value="type 3">
+    <label for="student-group-3">TYPE 3 gr.</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Interests:</legend>
+
+    <input type="checkbox" name="interest" id="interest1" value="JavaScript" checked>
+    <label for="interest1">JavaScript</label>
+
+    <input type="checkbox" name="interest" id="interest2" value="Python">
+    <label for="interest2">Python</label>
+
+    <input type="checkbox" name="interest" id="interest3" value="C++" checked>
+    <label for="interest3">C++</label>
+
+    <input type="checkbox" name="interest" id="interest4" value="C#">
+    <label for="interest4">C#</label>
+  </fieldset>
+
+  <input type="submit">
+</form>
+
+<span id="alert"></span>
+
+<div id="students-list"></div>
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
